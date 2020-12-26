@@ -1,4 +1,4 @@
-from abc import ABCMeta, abstractmethod
+from abc import ABC, ABCMeta, abstractmethod
 from collections.abc import Iterable
 
 class DeadlinedMetaReminder(Iterable,ABCMeta=metaclass):
@@ -7,4 +7,6 @@ class DeadlinedMetaReminder(Iterable,ABCMeta=metaclass):
     def is_due():
         pass
 
-    
+class DeadlinedReminder(Iterable,ABC):
+
+
